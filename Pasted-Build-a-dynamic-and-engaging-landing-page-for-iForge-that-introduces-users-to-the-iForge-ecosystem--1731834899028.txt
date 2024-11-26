@@ -1,0 +1,43 @@
+Build a dynamic and engaging landing page for iForge that introduces users to the iForge ecosystem, with a focus on iForge Academy as the primary service. Design the landing page with iForge Academy as the first section, followed by the iForge Online Store and iForge Maker Store. Ensure the page has a clean, modern look with accessibility, clear calls-to-action, and a cohesive layout. Follow these specific guidelines:
+
+1. Hero Section
+Create a visually engaging hero section at the top, with a tagline introducing iForge as a hub for 3D printing, innovation, and learning.
+Include prominent buttons for each main iForge service:
+iForge Academy – an education platform for learning innovative skills and earning rewards.
+iForge Online Store – where we sell 3D printers.
+iForge Maker Store – a marketplace where users can buy and sell 3D models.
+2. Section: iForge Academy (First Priority)
+Highlight iForge Academy as the core of iForge’s offerings, focusing on skill-building, community, and achievements.
+Include an overview of Academy features:
+Courses and Learning Modules: Access courses in 3D printing, digital design, and related innovative skills.
+Team Collaboration and Challenges: Users can join or create teams, participate in challenges, and build connections.
+POAP Badges: Describe the badges issued on the Ethereum blockchain, which users earn by completing tasks and progressing through courses.
+Leaderboard: Mention the leaderboard where users can track progress and achievements.
+Add a “Start Learning” button to direct users to iForge Academy, inviting them to explore courses and join the learning community.
+3. Section: iForge Online Store
+Introduce the iForge Online Store as a place to buy high-quality 3D printers.
+Highlight Bambu Lab 3D printers with an image and a brief description that emphasizes their capabilities and value.
+Include a “Shop Now” button that directs users to the iForge Online Store for purchasing 3D printers.
+4. Section: iForge Maker Store
+Describe the iForge Maker Store as a marketplace where creators can sell their 3D designs, and users can purchase models or order prints directly through iForge’s on-demand manufacturing centers.
+Emphasize the opportunity for creators to list their designs for sale and earn income.
+Add a button labeled “Explore the Maker Store” that links directly to the Maker Store.
+5. About iForge Section
+Provide a brief overview of iForge’s mission to foster innovation, creativity, and hands-on learning in 3D printing.
+Emphasize iForge’s unique position as a comprehensive platform where users can learn, create, and purchase.
+6. Footer with Quick Access Links
+Add a footer with quick links to each main section:
+iForge Academy
+iForge Online Store
+iForge Maker Store
+Include social media links, contact information, and a small section for any legal or privacy information if applicable.
+7. Visual and Branding Consistency
+Apply iForge brand colors, typography, and the ‘Logo iForge-8’ throughout the page for a cohesive and professional appearance.
+Ensure each section is visually distinct while maintaining consistency with the overall brand aesthetic.
+8. Mobile Responsiveness and Performance
+Make sure the landing page is fully responsive and optimized for both mobile and desktop users.
+Use lazy loading for images, compress assets, and implement caching to ensure fast load times.
+9. Calls-to-Action and Navigation
+Ensure each section includes clear and prominent buttons that take users directly to the respective iForge services.
+Make the navigation intuitive, with a top menu linking to each main section and a sticky button or quick-access panel for mobile users.
+The goal is to create an inviting, easy-to-navigate landing page that introduces users to iForge’s ecosystem with iForge Academy as the primary focus. Ensure a visually engaging design that is user-friendly and aligned with iForge’s brand identity.
