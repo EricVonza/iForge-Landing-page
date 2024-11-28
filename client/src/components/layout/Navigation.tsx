@@ -11,6 +11,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import iForgeLogo from "./iforgelogo.png";
+import ComingSoon from "../sections/ComingSoon"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ export function Navigation() {
                   className={cn(
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
-                  href="#academy"
+                  href="https://academy.innovatorsforge.com/"
                 >
                   Academy
                 </NavigationMenuLink>
@@ -54,7 +55,7 @@ export function Navigation() {
                   className={cn(
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
-                  href="#store"
+                  href="https://store.innovatorsforge.com/pages/shop-products"
                 >
                   Online Store
                 </NavigationMenuLink>
@@ -64,7 +65,7 @@ export function Navigation() {
                   className={cn(
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
-                  href="#maker"
+                  href=""
                 >
                   Maker Store
                 </NavigationMenuLink>
@@ -80,11 +81,11 @@ export function Navigation() {
               <ul className="flex flex-col space-y-4">
                 <li>
                   <a
-                    href="#academy"
+                    href="https://store.innovatorsforge.com/"
                     className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Academy
+                    Community
                   </a>
                 </li>
                 <li>
@@ -109,10 +110,12 @@ export function Navigation() {
             </nav>
           </div>
         )}
-
+        <a href="https://academy.innovatorsforge.com">
         <Button variant="default" className="hidden lg:inline-flex">
-          Academy
+          Community
         </Button>
+        </a>
+        
       </div>
     </header>
   );

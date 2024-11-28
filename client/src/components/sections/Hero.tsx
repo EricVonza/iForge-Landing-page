@@ -5,8 +5,8 @@ import { sectionClasses, gradientClasses, buttonClasses } from "@/lib/styles";
 
 export function Hero() {
   const callToActions = [
-    { href: "#academy", text: "Join Academy" },
-    { href: "#store", text: "Shop Printers" },
+    { href: "https://academy.innovatorsforge.com", text: "Join Academy" },
+    { href: "https://store.innovatorsforge.com/collections/3d-printers-1", text: "Shop Printers" },
     { href: "#maker", text: "Visit Maker Store" }
   ];
 

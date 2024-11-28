@@ -14,22 +14,36 @@ import {
 export function Footer() {
   const links = {
     services: [
-      { name: "iForge Academy", href: "#academy" },
-      { name: "Online Store", href: "#store" },
+      { name: "iForge Academy", href: "https://academy.innovatorsforge.com" },
+      { name: "Online Store", href: "https://store.innovatorsforge.com" },
       { name: "Maker Store", href: "#maker" },
     ],
     social: [
+
+      /*Insert Tiktok here*/
+      {
+        name: "Facebook",
+        href: "https://www.tiktok.com/@innovatorsforge",
+        icon: Facebook,
+      },
       {
         name: "Facebook",
         href: "https://www.facebook.com/profile.php?id=61555254366066",
         icon: Facebook,
       },
+      
+
+      /*-----Change Twitter icon-----*/
       {
         name: "Twitter",
         href: "https://www.x.com/InnovatorsForge/",
         icon: Twitter,
       },
-      { name: "Instagram", href: "#", icon: Instagram },
+
+        /*-----Replace with medium social-----*/
+
+      { name: "Instagram", href: "https://medium.com/@competition", icon: Instagram },
+      
       {
         name: "YouTube",
         href: "https://youtube.com/@innovatorsforge?si=j9eqc3TOzMgYvBex",
