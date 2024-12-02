@@ -1,14 +1,18 @@
 import { Separator } from "@/components/ui/separator";
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
 import iForgeLogo from "./iforgelogo.png";
+import FacebookIcon from "./icons8-facebook.svg";
+import MediumIcon from "./icons8-medium.svg";
+import TikTokIcon from "./icons8-tiktok.svg";
+import TwitterXIcon from "./icons8-twitterx.svg";
+import YouTubeIcon from "./icons8-youtube.svg";
+
 import { fadeIn, hoverScale } from "@/lib/animations";
 import {
   sectionClasses,
   gridClasses,
   spacingClasses,
   textClasses,
-  layoutClasses,
 } from "@/lib/styles";
 
 export function Footer() {
@@ -19,36 +23,32 @@ export function Footer() {
       { name: "Maker Store", href: "#maker" },
     ],
     social: [
-
-      /*Insert Tiktok here*/
       {
         name: "Facebook",
-        href: "https://www.tiktok.com/@innovatorsforge",
-        icon: Facebook,
+        href: "https://www.facebook.com/innovatorsforge",
+        icon: FacebookIcon, // Using the imported SVG for Facebook
       },
-      {
-        name: "Facebook",
-        href: "https://www.facebook.com/profile.php?id=61555254366066",
-        icon: Facebook,
-      },
-      
-
-      /*-----Change Twitter icon-----*/
       {
         name: "Twitter",
         href: "https://www.x.com/InnovatorsForge/",
-        icon: Twitter,
+        icon: TwitterXIcon,
       },
-
-        /*-----Replace with medium social-----*/
-
-      { name: "Instagram", href: "https://medium.com/@competition", icon: Instagram },
-      
+      {
+        name: "Medium",
+        href: "https://medium.com/@competition", // Updated to Medium's link
+        icon: MediumIcon,
+      },
       {
         name: "YouTube",
         href: "https://youtube.com/@innovatorsforge?si=j9eqc3TOzMgYvBex",
-        icon: Youtube,
+        icon: YouTubeIcon,
       },
+
+      {
+        name: "TikTok",
+        href: "https://www.tiktok.com/@innovatorsforge",
+        icon: TikTokIcon,
+        },
     ],
   };
 
@@ -56,6 +56,7 @@ export function Footer() {
     <motion.footer {...fadeIn} className={sectionClasses.footer}>
       <div className={sectionClasses.container}>
         <div className={spacingClasses.footerGap}>
+          {/* Header Section */}
           <div className={`${gridClasses.twoColumns} gap-8`}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -76,6 +77,7 @@ export function Footer() {
               </p>
             </motion.div>
 
+            {/* Links Section */}
             <div className={`${gridClasses.twoColumns} gap-8`}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -100,6 +102,7 @@ export function Footer() {
                 </ul>
               </motion.div>
 
+              {/* Social Links Section */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +120,12 @@ export function Footer() {
                       className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                     >
                       <span className="sr-only">{item.name}</span>
-                      <item.icon className="h-5 w-5" />
+                      {/* Dynamically render the icon */}
+                      {typeof item.icon === "string" ? (
+                        <img src={item.icon} alt={item.name} className="h-5 w-5" />
+                      ) : (
+                        <item.icon className="h-5 w-5" />
+                      )}
                     </motion.a>
                   ))}
                 </div>
@@ -125,8 +133,10 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Separator */}
           <Separator className="my-8" />
 
+          {/* Footer Bottom */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

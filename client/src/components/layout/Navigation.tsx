@@ -12,6 +12,9 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import iForgeLogo from "./iforgelogo.png";
 import ComingSoon from "../sections/ComingSoon"
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,12 +64,15 @@ export function Navigation() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink
+              <NavigationMenuLink
                   className={cn(
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
-                  href=""
-                >
+                  
+                  href="https://www.shutterstock.com/image-illustration/coming-soon-web-banner-sign-600nw-2286318125.jpg"
+                  target="_blank"
+                  >
+                
                   Maker Store
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -99,7 +105,7 @@ export function Navigation() {
                 </li>
                 <li>
                   <a
-                    href="#maker"
+                    href="../sections/ComingSoon"
                     className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
