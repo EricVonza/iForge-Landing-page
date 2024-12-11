@@ -1,36 +1,39 @@
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Store, Printer, DollarSign } from "lucide-react";
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/section-header";
 import { fadeIn, hoverScale, sectionAnimation } from "@/lib/animations";
-import { 
-  sectionClasses, 
-  buttonClasses, 
-  gridClasses, 
-  spacingClasses, 
+import {
+  sectionClasses,
+  buttonClasses,
+  gridClasses,
+  spacingClasses,
   textClasses,
   layoutClasses,
-  gradientClasses
 } from "@/lib/styles";
+import ComingSoon from "./ComingSoon";
 
 export function MakerStore() {
+  const [showComingSoon, setShowComingSoon] = useState(false);
+
   const features = [
     {
       icon: Store,
       title: "Buy 3D Models",
-      description: "Browse and purchase high-quality 3D models from our community."
+      description: "Browse and purchase high-quality 3D models from our community.",
     },
     {
       icon: Printer,
       title: "On-Demand Printing",
-      description: "Get your designs printed through our manufacturing centers."
+      description: "Get your designs printed through our manufacturing centers.",
     },
     {
       icon: DollarSign,
       title: "Sell Your Designs",
-      description: "List your 3D models and earn from every sale."
-    }
+      description: "List your 3D models and earn from every sale.",
+    },
   ];
 
   return (
@@ -61,9 +64,7 @@ export function MakerStore() {
                     <h3 className={textClasses.subtitle}>{feature.title}</h3>
                   </CardHeader>
                   <CardContent>
-                    <p className={textClasses.description}>
-                      {feature.description}
-                    </p>
+                    <p className={textClasses.description}>{feature.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -77,12 +78,17 @@ export function MakerStore() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <Button 
-              size="lg" 
-              className={`${buttonClasses.gradient} ${buttonClasses.hover}`}
-            >
-              Explore the Maker Store
-            </Button>
+            {!showComingSoon ? (
+              <Button
+                size="lg"
+                className={`${buttonClasses.gradient} ${buttonClasses.hover}`}
+                onClick={() => setShowComingSoon(true)}
+              >
+                Explore the Maker Store
+              </Button>
+            ) : (
+              <ComingSoon />
+            )}
           </motion.div>
         </div>
       </motion.div>

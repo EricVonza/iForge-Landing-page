@@ -9,10 +9,13 @@ export function About() {
       <div className="absolute inset-0 bg-grid-pattern bg-[size:2rem_2rem] opacity-40" />
       <motion.div {...fadeIn} className={sectionClasses.container}>
         <div className={spacingClasses.sectionGap}>
+          
           <SectionHeader 
+          
             title="About iForge"
             description="iForge is dedicated to fostering innovation, creativity, and hands-on learning in the world of 3D printing."
           />
+          
           
           <motion.div {...sectionAnimation} className={spacingClasses.contentGap}>
             <motion.p 

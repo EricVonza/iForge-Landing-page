@@ -28,7 +28,7 @@ export function Navigation() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden"
+          className="lg:hidden absolute right-0 mr-4"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >

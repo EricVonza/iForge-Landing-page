@@ -42,9 +42,13 @@ export function OnlineStore() {
                     high-speed printing, and exceptional print quality.
                   </motion.p>
                   <motion.div {...hoverScale}>
+                    <a href="https://store.innovatorsforge.com/pages/shop-products"
+                    target="_blank"
+                    >
                     <Button size="lg" className={buttonClasses.gradient}>
                       Shop Now
                     </Button>
+                    </a>
                   </motion.div>
                 </div>
                 <motion.div className="relative aspect-video overflow-hidden rounded-lg bg-muted">
