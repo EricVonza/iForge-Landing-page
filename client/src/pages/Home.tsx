@@ -6,6 +6,7 @@ import { Academy } from "@/components/sections/Academy";
 import { OnlineStore } from "@/components/sections/OnlineStore";
 import { MakerStore } from "@/components/sections/MakerStore";
 import { Testimonials } from "@/components/sections/Testimonials";
+import ComingSoon from "@/components/sections/ComingSoon";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Academy />
         <OnlineStore />
         <MakerStore />
+      
         <About />
         <Testimonials />
       </main>

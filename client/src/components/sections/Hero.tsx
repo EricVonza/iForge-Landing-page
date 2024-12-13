@@ -7,8 +7,11 @@ export function Hero() {
   const callToActions = [
     { href: "https://academy.innovatorsforge.com", text: "Join Academy" },
     { href: "https://store.innovatorsforge.com/collections/3d-printers-1", text: "Shop Printers" },
-    { href: "#maker", text: "Visit Maker Store" }
+
   ];
+      {/*  Should be included into the Call to Action Array in the future  { href: "#maker", text: "Visit Maker Store" } */}
+
+
 
   return (
     <section className={sectionClasses.hero}>

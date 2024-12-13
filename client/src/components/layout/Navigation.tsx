@@ -69,8 +69,8 @@ export function Navigation() {
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
                   
-                  href="https://www.shutterstock.com/image-illustration/coming-soon-web-banner-sign-600nw-2286318125.jpg"
-                  target="_blank"
+                  href="#maker"
+                  
                   >
                 
                   Maker Store
@@ -105,7 +105,7 @@ export function Navigation() {
                 </li>
                 <li>
                   <a
-                    href="../sections/ComingSoon"
+                    href="#maker"
                     className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >

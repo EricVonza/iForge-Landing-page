@@ -70,6 +70,7 @@
     "swr": "^2.2.5",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-filters": "^3.0.0",
     "vaul": "^1.1.0",
     "vite-plugin-svgr": "^4.3.0",
     "vitest": "^2.1.5",
