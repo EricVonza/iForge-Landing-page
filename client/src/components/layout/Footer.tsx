@@ -18,8 +18,8 @@ import {
 export function Footer() {
   const links = {
     services: [
-      { name: "iForge Academy", href: "https://academy.innovatorsforge.com" },
-      { name: "Online Store", href: "https://store.innovatorsforge.com" },
+      { name: "iForge Academy", href: "https://academy.innovatorsforge.com/auth/sign-in" },
+      { name: "Online Store", href: "https://store.innovatorsforge.com/pages/shop-products" },
       { name: "Maker Store", href: "#maker" },
     ],
     social: [
@@ -43,12 +43,11 @@ export function Footer() {
         href: "https://youtube.com/@innovatorsforge?si=j9eqc3TOzMgYvBex",
         icon: YouTubeIcon,
       },
-
       {
         name: "TikTok",
         href: "https://www.tiktok.com/@innovatorsforge",
         icon: TikTokIcon,
-        },
+      },
     ],
   };
 
@@ -93,6 +92,8 @@ export function Footer() {
                       <motion.a
                         {...hoverScale}
                         href={link.href}
+                        target="_blank" // Open in new tab
+                        rel="noopener noreferrer" // Security best practice
                         className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                       >
                         {link.name}
@@ -117,6 +118,8 @@ export function Footer() {
                       key={item.name}
                       {...hoverScale}
                       href={item.href}
+                      target="_blank" // Open in new tab
+                      rel="noopener noreferrer" // Security best practice
                       className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                     >
                       <span className="sr-only">{item.name}</span>
@@ -153,6 +156,8 @@ export function Footer() {
                   key={text}
                   {...hoverScale}
                   href="#"
+                  target="_blank" // Open in new tab
+                  rel="noopener noreferrer" // Security best practice
                   className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                 >
                   {text}

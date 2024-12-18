@@ -86,12 +86,17 @@ export function Academy() {
             viewport={{ once: true }}
             className="text-center"
           >
+            <a href="https://academy.innovatorsforge.com/auth/sign-in"
+            target="_blank">
             <Button 
               size="lg" 
               className={`${buttonClasses.gradient} ${buttonClasses.hover}`}
             >
               Start Learning
             </Button>
+
+            </a>
+            
           </motion.div>
         </div>
       </motion.div>

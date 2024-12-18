@@ -6,21 +6,21 @@ import { sectionClasses, textClasses, spacingClasses } from "@/lib/styles"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Faith Kemboi",
     role: "Engineering Student",
     image: "/avatars/sarah.svg",
     content: "iForge Academy transformed my learning experience. The practical workshops and hands-on projects gave me real-world skills.",
     initials: "SJ"
   },
   {
-    name: "David Chen",
+    name: "David Mutua",
     role: "Maker Space Member",
     image: "/avatars/david.svg",
     content: "The Maker Store has everything I need for my projects. The staff is knowledgeable and always ready to help.",
     initials: "DC"
   },
   {
-    name: "Emily Rodriguez",
+    name: "Emily Wanjiru",
     role: "Tech Entrepreneur",
     image: "/avatars/emily.svg",
     content: "The online store's quick delivery and quality components have been essential for my startup.",

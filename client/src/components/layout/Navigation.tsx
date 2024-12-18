@@ -48,7 +48,7 @@ export function Navigation() {
                   className={cn(
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
-                  href="https://academy.innovatorsforge.com/"
+                  href="#academy"
                 >
                   Academy
                 </NavigationMenuLink>
@@ -58,7 +58,7 @@ export function Navigation() {
                   className={cn(
                     "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
                   )}
-                  href="https://store.innovatorsforge.com/pages/shop-products"
+                  href="#store"
                 >
                   Online Store
                 </NavigationMenuLink>
@@ -85,13 +85,14 @@ export function Navigation() {
           <div className="absolute top-16 left-0 w-full bg-background border-b lg:hidden">
             <nav className="container py-4">
               <ul className="flex flex-col space-y-4">
-                <li>
+              <li>
                   <a
-                    href="https://store.innovatorsforge.com/"
+                    href="https://academy.innovatorsforge.com/auth/sign-in"
+                    target="_blank"
                     className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Community
+                    Academy
                   </a>
                 </li>
                 <li>
@@ -112,11 +113,21 @@ export function Navigation() {
                     Maker Store
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://academy.innovatorsforge.com/auth/sign-in"
+                    target="_blank"
+                    className="block px-4 py-2 text-sm bg-orange-500 text-white rounded-md border border-orange-500 hover:bg-orange-700 hover:text-white hover:border-orange-700" >
+                      
+                    Community
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
         )}
-        <a href="https://academy.innovatorsforge.com">
+        <a href="https://academy.innovatorsforge.com/auth/sign-in"
+        target="_blank">
         <Button variant="default" className="hidden lg:inline-flex">
           Community
         </Button>
