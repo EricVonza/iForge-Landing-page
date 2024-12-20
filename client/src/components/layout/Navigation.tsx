@@ -87,8 +87,8 @@ export function Navigation() {
               <ul className="flex flex-col space-y-4">
               <li>
                   <a
-                    href="https://academy.innovatorsforge.com/auth/sign-in"
-                    target="_blank"
+                    href="#academy"
+                    
                     className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
