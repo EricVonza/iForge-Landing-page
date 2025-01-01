@@ -26,7 +26,7 @@ export function Footer() {
       {
         name: "Facebook",
         href: "https://www.facebook.com/innovatorsforge",
-        icon: FacebookIcon, // Using the imported SVG for Facebook
+        icon: FacebookIcon,
       },
       {
         name: "Twitter",
@@ -35,7 +35,7 @@ export function Footer() {
       },
       {
         name: "Medium",
-        href: "https://medium.com/@competition", // Updated to Medium's link
+        href: "https://medium.com/@competition",
         icon: MediumIcon,
       },
       {
@@ -75,6 +75,19 @@ export function Footer() {
                 cutting-edge 3D printing technology.
               </p>
             </motion.div>
+            <div className="mt-8 w-full h-64">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.851585197263!2d36.83773986865609!3d-1.2613150959125083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1777451ff151%3A0x835b0fbe8bcefab8!2siForge%20(Innovators%20Forge)!5e0!3m2!1sen!2ske!4v1735771696167!5m2!1sen!2ske"
+              width="100%"
+              height="150%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+               referrerPolicy="no-referrer-when-downgrade">
+
+            </iframe>
+            </div>
+
 
             {/* Links Section */}
             <div className={`${gridClasses.twoColumns} gap-8`}>
@@ -92,8 +105,8 @@ export function Footer() {
                       <motion.a
                         {...hoverScale}
                         href={link.href}
-                        target="_blank" // Open in new tab
-                        rel="noopener noreferrer" // Security best practice
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                       >
                         {link.name}
@@ -118,12 +131,11 @@ export function Footer() {
                       key={item.name}
                       {...hoverScale}
                       href={item.href}
-                      target="_blank" // Open in new tab
-                      rel="noopener noreferrer" // Security best practice
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                     >
                       <span className="sr-only">{item.name}</span>
-                      {/* Dynamically render the icon */}
                       {typeof item.icon === "string" ? (
                         <img src={item.icon} alt={item.name} className="h-5 w-5" />
                       ) : (
@@ -156,8 +168,8 @@ export function Footer() {
                   key={text}
                   {...hoverScale}
                   href="#"
-                  target="_blank" // Open in new tab
-                  rel="noopener noreferrer" // Security best practice
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                 >
                   {text}
@@ -167,6 +179,8 @@ export function Footer() {
           </motion.div>
         </div>
       </div>
+      
+     
     </motion.footer>
   );
 }
