@@ -40,44 +40,42 @@ export function Navigation() {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:block">
-          <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  )}
-                  href="#academy"
-                >
-                  Academy
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={cn(
-                    "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  )}
-                  href="#store"
-                >
-                  Online Store
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-              <NavigationMenuLink
-                  className={cn(
-                    "group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                  )}
-                  
-                  href="#maker"
-                  
-                  >
-                
-                  Maker Store
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+        <div className="hidden lg:flex justify-center items-center w-full">
+         <NavigationMenu>
+          <NavigationMenuList className="flex w-full space-x-4 justify-center">
+          <NavigationMenuItem className="w-full lg:w-auto">
+          <NavigationMenuLink
+          className={cn(
+            "group inline-flex h-10 w-full items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+          )}
+          href="#academy"
+        >
+          Academy
+        </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="w-full lg:w-auto">
+        <NavigationMenuLink
+          className={cn(
+            "group inline-flex h-10 w-full items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+          )}
+          href="#store"
+        >
+          Online Store
+        </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="w-full lg:w-auto">
+        <NavigationMenuLink
+          className={cn(
+            "group inline-flex h-10 w-full items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
+          )}
+          href="#maker"
+        >
+          Maker Store
+        </NavigationMenuLink>
+        </NavigationMenuItem>
+     
+        </NavigationMenuList>
+        </NavigationMenu>
         </div>
 
         {/* Mobile Navigation */}
@@ -107,7 +105,7 @@ export function Navigation() {
                 <li>
                   <a
                     href="#maker"
-                    className="block px-4 py-2 text-sm hover:bg-accent rounded-md"
+                    className="block px-1 py-2 text-sm hover:bg-accent rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Maker Store
@@ -126,12 +124,15 @@ export function Navigation() {
             </nav>
           </div>
         )}
+        <div className="absolute right-5">
         <a href="https://academy.innovatorsforge.com/auth/sign-in"
         target="_blank">
-        <Button variant="default" className="hidden lg:inline-flex">
+        <Button variant="default" className="w-full flex justify-end hidden lg:inline-flex">
           Community
         </Button>
         </a>
+        </div>
+        
         
       </div>
     </header>
