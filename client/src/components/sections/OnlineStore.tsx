@@ -30,7 +30,7 @@ export function OnlineStore() {
                     {...fadeIn}
                     className={`text-2xl font-bold ${gradientClasses.text}`}
                   >
-                    Bambu Lab 3D Printers
+                    Official Bambu Lab Partner
                   </motion.h3>
                   <motion.p
                     {...fadeIn}
