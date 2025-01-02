@@ -40,43 +40,43 @@ export function Navigation() {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex justify-center items-center w-full h-screen">
-  <NavigationMenu className="w-full">
-    <NavigationMenuList className="flex justify-center w-full space-x-4">
-      <NavigationMenuItem className="w-full lg:w-auto">
-        <NavigationMenuLink
+        <div className="hidden lg:flex ml-10 items-center w-full justify-end">
+         <NavigationMenu>
+          <NavigationMenuList className="flex w-full space-x-4 justify-center">
+          <NavigationMenuItem className="w-full lg:w-auto">
+          <NavigationMenuLink
           className={cn(
-            "group inline-flex h-10 w-full items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+            "group inline-flex h-10 w-full rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
           )}
           href="#academy"
         >
           Academy
         </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem className="w-full lg:w-auto">
+        </NavigationMenuItem>
+        <NavigationMenuItem className="w-full lg:w-auto">
         <NavigationMenuLink
           className={cn(
-            "group inline-flex h-10 w-full items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+            "group inline-flex h-10 w-full rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
           )}
           href="#store"
         >
           Online Store
         </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem className="w-full lg:w-auto">
+        </NavigationMenuItem>
+        <NavigationMenuItem className="w-full lg:w-auto">
         <NavigationMenuLink
           className={cn(
-            "group inline-flex h-10 w-full items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
+            "group inline-flex h-10 w-full rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50",
           )}
           href="#maker"
         >
           Maker Store
         </NavigationMenuLink>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-  </NavigationMenu>
-</div>
-
+        </NavigationMenuItem>
+     
+        </NavigationMenuList>
+        </NavigationMenu>
+        </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
