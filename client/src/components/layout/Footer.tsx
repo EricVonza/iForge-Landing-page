@@ -75,18 +75,7 @@ export function Footer() {
                 cutting-edge 3D printing technology.
               </p>
             </motion.div>
-            <div className="relative w-full pt-[56.25%] sm:pt-[40%] lg:pt-[30%]">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.851585197263!2d36.83773986865609!3d-1.2613150959125083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1777451ff151%3A0x835b0fbe8bcefab8!2siForge%20(Innovators%20Forge)!5e0!3m2!1sen!2ske!4v1735771696167!5m2!1sen!2ske"
-              width="100%"
-              height="150%"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-               referrerPolicy="no-referrer-when-downgrade">
-
-            </iframe>
-            </div>
+            
 
 
             {/* Links Section */}
