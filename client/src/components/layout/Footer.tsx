@@ -51,6 +51,8 @@ export function Footer() {
     ],
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <motion.footer {...fadeIn} className={sectionClasses.footer}>
       <div className={sectionClasses.container}>
@@ -75,8 +77,6 @@ export function Footer() {
                 cutting-edge 3D printing technology.
               </p>
             </motion.div>
-            
-
 
             {/* Links Section */}
             <div className={`${gridClasses.twoColumns} gap-8`}>
@@ -125,11 +125,7 @@ export function Footer() {
                       className={`${textClasses.description} hover:text-foreground transition-colors duration-200`}
                     >
                       <span className="sr-only">{item.name}</span>
-                      {typeof item.icon === "string" ? (
-                        <img src={item.icon} alt={item.name} className="h-5 w-5" />
-                      ) : (
-                        <item.icon className="h-5 w-5" />
-                      )}
+                      <img src={item.icon} alt={item.name} className="h-5 w-5" />
                     </motion.a>
                   ))}
                 </div>
@@ -149,7 +145,7 @@ export function Footer() {
             className="flex flex-col sm:flex-row items-center justify-between gap-4"
           >
             <p className={textClasses.description}>
-              © 2024 iForge. All rights reserved.
+              © {currentYear} iForge. All rights reserved.
             </p>
             <div className="flex space-x-6">
               {["Privacy Policy", "Terms of Service"].map((text) => (
@@ -168,8 +164,6 @@ export function Footer() {
           </motion.div>
         </div>
       </div>
-      
-     
     </motion.footer>
   );
 }
